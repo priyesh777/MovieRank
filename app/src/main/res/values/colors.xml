@@ -2,4 +2,11 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+    //MovieRank theme colors
+    <color name="base_blue">#3D57BA</color>
+    <color name="base_yellow">#C1BA40</color>
+    <color name="base_grey">#F8FAFC</color>
+    <color name="space_gray">#7E969E</color>
+    <color name="yellowish_gray">#EFE37D</color>
 </resources>
