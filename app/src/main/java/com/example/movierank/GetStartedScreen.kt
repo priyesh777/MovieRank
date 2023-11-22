@@ -33,6 +33,8 @@ class GetStartedScreen : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
+
+        view
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.get_started_screen, container, false)
     }
