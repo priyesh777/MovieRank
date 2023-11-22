@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_list"
+    app:startDestination="@id/getStartedScreen">
+
+    <fragment
+        android:id="@+id/getStartedScreen"
+        android:name="com.example.movierank.GetStartedScreen"
+        android:label="get_started_screen"
+        tools:layout="@layout/get_started_screen" >
+        <action
+            android:id="@+id/action_getStartedScreen_to_movieList"
+            app:destination="@id/movieList" />
+    </fragment>
+    <fragment
+        android:id="@+id/movieList"
+        android:name="com.example.movierank.MovieList"
+        android:label="movie_list_screen"
+        tools:layout="@layout/movie_list_screen" >
+        <action
+            android:id="@+id/action_movieList_to_getStartedScreen"
+            app:destination="@id/getStartedScreen" />
+    </fragment>
+    <fragment
+        android:id="@+id/addNewMovie"
+        android:name="com.example.movierank.AddNewMovie"
+        android:label="add_new_movie_screen"
+        tools:layout="@layout/add_new_movie_screen" />
+    <fragment
+        android:id="@+id/editMovieScreen"
+        android:name="com.example.movierank.EditMovieScreen"
+        android:label="edit_movie_screen"
+        tools:layout="@layout/edit_movie_screen" />
+</navigation>
