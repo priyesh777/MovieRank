@@ -6,7 +6,18 @@
     android:background="@color/base_blue"
     tools:context=".MovieList">
 
-    <!-- TODO: Update blank fragment layout -->
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/backButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:src="@drawable/baseline_arrow_back_24"
+        android:backgroundTint="@color/base_blue"
+        />
+
     <TextView
         android:id="@+id/movieListHeading"
         android:layout_width="wrap_content"
@@ -39,7 +50,6 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         android:src="@drawable/baseline_add_24"
-        android:tint="@color/white"
         android:backgroundTint="@color/yellowish_gray"
         />
 

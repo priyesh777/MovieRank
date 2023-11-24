@@ -27,5 +27,9 @@ class MovieList : Fragment(R.layout.movie_list_screen) {
         binding.addButton.setOnClickListener {
             it.findNavController().navigate(R.id.navigate_to_add_new_movie)
         }
+
+        binding.backButton.setOnClickListener {
+            it.findNavController().navigate(R.id.navigate_back_to_get_started_screen)
+        }
     }
 }
